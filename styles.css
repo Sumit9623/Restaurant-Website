@@ -1,0 +1,298 @@
+*{
+    --max_text_size:70px;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+html
+{
+    font-size: var(--max_text_size);
+    top:0px;
+    left:0px
+}
+.navbar
+{
+    display: grid ;
+    grid-template-columns: 200px auto 200px;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.navbar #mainul
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    margin: 20px;
+}
+.navbar #mainul #mainli
+{
+    list-style: none; 
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 0.3rem;
+    margin-left: 45px;
+    color: rgb(0, 0, 0);
+    
+}
+.navbar #mainul #mainli a
+{
+    color: white;
+    text-decoration: none; 
+    margin: 0px 10px;
+}
+.navbar #mainul #mainli a:hover
+{
+    color: rgb(163, 163, 163);
+    text-decoration: none; 
+}
+.navbar::before
+{
+    content: " ";
+    background-color: rgba(9, 3, 3, 0.442);
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#home
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--max_text_size);
+    color: white;
+}
+#home h2
+{
+    display: inline block;
+    margin-top: 100px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 1rem;
+    text-shadow: 4px 4px 9px black;
+    text-align: center;
+}
+#home::before
+{
+    content: " ";
+    background: url('../Project_2/background_images/wood-2045380_960_720.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.logotext
+{
+    margin-left: 30px;
+    font-size: 40px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Lobster Two',cursive;
+}
+.login
+{
+    display: flex;
+    justify-content: center;
+}
+.login button
+{
+    width: 130px;
+    display:grid;
+    color: white;
+    grid-template-columns: auto 30px;
+    justify-content: stretch;
+    align-items: center;
+    height: 30px;
+    border-radius: 6px;
+    background-color: rgb(0, 200, 30);
+    border: none;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    box-shadow: 3px 3px 4px black;
+}
+.login :hover
+{
+    transform: scale(1.12);
+}
+.menudropdown
+{
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.menudropdownbutton
+{
+    width: 60%;
+    margin: 0px 40px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 0.3rem;
+    font-family: 'Baloo Da 2',cursive;
+}
+.menudropdownbutton:hover
+{
+    color: rgba(21, 12, 12, 0.35);
+}
+.menudropdown:hover .menudropdowncontent
+{
+    display: block;
+}
+.menudropdowncontent:hover .menudropdowncontent
+{
+    display: block;
+}
+.space:hover .menudropdowncontent
+{
+    display: block;
+}
+.space
+{
+    width: 100%;
+    height: 12px;
+    background: none;
+}
+.menudropdown .menudropdowncontent
+{
+    position: relative;
+    left: 50px;  
+    top: 5px;
+    width: 160px;
+    padding: 0px 0px 0px 0px;
+    display: none;
+}
+.menudropdown .menudropdowncontent #menuul
+{
+    padding: 0px;
+    background-color: #140d0d6c;
+}
+.menudropdown .menudropdowncontent #menuul .menuli
+{
+    list-style: none;
+    font-size: 0.3rem;
+    text-align: left;
+    padding: 4px;
+    margin-left: 30px;
+    font-family: 'Baloo Da 2', cursive;
+    
+}
+.menudropdown .menudropdowncontent #menuul .menuli a:hover
+{
+    color: rgb(163, 163, 163);
+}
+.menudropdown .menudropdowncontent #menuul .menuli a
+{
+    text-decoration: none;
+    color: white;
+}
+.searchbox
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 600px;
+}
+.searchbox .inputbox
+{
+    display: flex;
+}
+.searchbox .inputbox #search
+{
+    width: 340px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    box-shadow: 3px 3px 3px #060606;
+
+}
+.searchbox button svg
+{
+    position: relative;
+    top: 4px;
+    left: 0px;
+    color: 00c81e;
+}
+.searchbox button
+{
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    position: relative;
+    background-color: #00c81e;
+    border: none;
+    height: 35px;
+    width: 160px;
+    border-radius: 7px;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px #060606;
+    font-weight: 600;
+    font-family: 'Baloo Da 2',cursive;
+    color: white;
+}
+.searchbox button:hover
+{
+    transform: scale(1.1);
+}
+h3.stepstext
+{
+    position: relative;
+    top: 20px;
+    font-family: 'Lobster Two',cursive;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px black;
+
+}
+.steps
+{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.steps li
+{
+    font-size: 25px;
+    /* list-style: none; */
+    font-family: cursive;
+}
+footer
+    {
+        background: transparent;
+        background-color: #1209096a;
+        display: flex ;
+        justify-content: center ;
+        align-items: center;
+        /* width: 1000px; */
+        /* border: 1px solid white;
+        border-radius: 20px;    */
+        /* margin : auto; */
+        margin-top: 80px;
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        font-family: 'Baloo Bhai 2',  Times, serif;  
+    }
+
